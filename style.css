@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40;
+    padding: 0;
+    background: radial-gradient(circle, #eeeeee, #cccccc, #999999, #666666, #000000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: radial-gradient(circle, #D2B48C, #A0522D, #8B4513, #5C4033, #3E2723);
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+main {
+    margin-top: 8rem;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.section {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: #ffffff; 
+    color: #333333; 
+    margin-bottom: 2rem; 
+}
+
+.card {
+    background: radial-gradient(circle, #f5f5dc, #d2b48c, #c3a078, #b8946a, #a67c52);
+    color: #333333; 
+    box-shadow: 0 4px 12px rgba(51, 12, 12, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    color: #ffffff; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form input, form select {
+    background: #f8f9fa; 
+    color: #333333; 
+}
+
+form input:focus, form select:focus {
+    border: 2px solid #4a90e2; 
+    outline: none;
+}
+
+form button {
+    background: #ff9800; 
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #f57c00; 
+    transform: scale(1.02);
+}
+
+#search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem; 
+}
+
+#search-section input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff; 
+    color: #333333; 
+}
+
+#search-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #ff9800;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background: #f57c00; 
+    transform: scale(1.02);
+}
+
+#filter-section select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff; 
+    color: #333333; 
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem; 
+}
+
+#filter-section select:focus {
+    outline: none;
+    border: 2px solid #ff9800; 
+}
+
+.book-item, .borrow-item {
+    padding: 1rem;
+    border-radius: 12px;
+    background: #ffffff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-item:hover, .borrow-item:hover {
+    background: #f1f8e9; 
+    transform: scale(1.02);
+}
+
+.book-item h3, .borrow-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #53200a;
+}
+
+.book-item p, .borrow-item p {
+    margin: 0.25rem 0;
+    color: #161f27;
+    font-style: italic;
+}
+
+.book-item button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background: #ff9800; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-item button:hover {
+    background: #f57c00; 
+    transform: scale(1.05);
+}

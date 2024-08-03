@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Book Library</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <section id="search-section" class="section card">
+                    <h2>Search Books</h2>
+                    <input type="text" id="search" placeholder="Search by Title or Author">
+                    <button id="search-button">Search</button>
+                </section>
+                
+                <section id="filter-section" class="section card">
+                    <h2>Filter by Category</h2>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                    </select>
+                </section>
+            </div>
+            
+            <div class="content">
+                <section id="add-book-section" class="section card">
+                    <h2>Add New Book</h2>
+                    <form id="add-book-form">
+                        <input type="text" id="title" placeholder="Book Title" required>
+                        <input type="text" id="author" placeholder="Author" required>
+                        <select id="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="Fiction">Fiction</option>
+                            <option value="Non-Fiction">Non-Fiction</option>
+                            <option value="Science">Science</option>
+                            <option value="Biography">Biography</option>
+                            <option value="Mythological">Mythological</option>
+                        </select>
+                        <button type="submit">Add Book</button>
+                    </form>
+                </section>
+                
+                <section id="book-list-section" class="section card">
+                    <h2>Book List</h2>
+                    <div id="book-list"></div>
+                </section>
+                
+                <section id="borrow-history-section" class="section card">
+                    <h2>Borrow History</h2>
+                    <div id="borrow-history"></div>
+                </section>
+                
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
